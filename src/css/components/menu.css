@@ -1,20 +1,19 @@
-nav{
-    position: relative;
-    top: 20px;
+.nav_menu{
     font-family: "Arial", Arial, sans-serif;
     font-size: 20px;
     font-weight: regular;
     display: flex;
     flex-direction: column;
 }
-nav ul{
+.nav_menu ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 39px;
 }
 
-nav ul a{
+.nav_menu ul a{
     text-decoration: none;
     color: var(--textes-secondaires);
 }
+

@@ -1,0 +1,113 @@
+#hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image de fond */
+.hero-background {
+margin-top: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55); /* assombrissement pour lisibilité */
+}
+
+/* Contenu */
+.hero-content {
+  padding: 120px 20px 60px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: Arial;
+}
+
+.hero-content h1 {
+  font-size: var(--36);
+  font-weight: lighter;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: var(--20);
+  font-weight: lighter;
+  margin: 0;
+}
+
+.hero-intro {
+  font-size: var(--14);
+  opacity: 0.9;
+  margin: 0 0 20px;
+}
+
+/* Liste des infos */
+
+.hero-infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px); /* effet flou translucide */
+  background: rgba(255, 255, 255, 0.25);
+  padding: 14px 20px;
+  border-radius: 40px;
+  font-size: var(--16);
+  font-family: Arial;
+  color: white;
+  gap: 12px;
+}
+
+.hero-info-icon {
+  font-size: 18px;
+  display: flex;
+}
+
+/* BOUTON */
+.hero-button {
+  margin-top: 20px;
+  background: #2fbf4a;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size:var(--14);
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-button:hover {
+  background: #27a440;
+}
+
+/* Icône dans le bouton */
+.hero-button-icon {
+  display: flex;
+  font-size: 18px;
+}
