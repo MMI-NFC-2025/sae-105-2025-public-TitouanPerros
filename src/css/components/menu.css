@@ -1,0 +1,20 @@
+nav{
+    position: relative;
+    top: 20px;
+    font-family: "Arial", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--textes-secondaires);
+}

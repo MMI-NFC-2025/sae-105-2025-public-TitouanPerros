@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow:0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.burger-btn {
+    border: none;
+    background: transparent;
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger-btn span {
+    display: block;
+    height: 2px;
+    background: #000; /* couleur des barres */
+    width: 100%;
+}
