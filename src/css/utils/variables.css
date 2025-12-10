@@ -1,0 +1,25 @@
+:root {
+  /* Mode 1 */
+  /* color */
+  --gris-clair: #f9fafb;
+  --texte-corps: #364153;
+  --texte-principal: #1e2939;
+  --textes-secondaires: #4a5565;
+  --vert-clair: #dcfce7;
+  --vert-foncé: #008235;
+  --vert-principal: #00a63e;
+  --vert-très-clair: #f0fdf4;
+  --vert-très-foncé: #016630;
+}
+/* Taille Police */
+:root {
+  /* Mode 1 */
+  /* number */
+  --14: 0.875rem;
+  --16: 1rem;
+  --18: 1.125rem;
+  --24: 1.5rem;
+  --30: 1.875rem;
+  --36: 2.25rem;
+  --48: 3rem;
+}

@@ -1,0 +1,13 @@
+@import "vendors/normalize.css";  
+@import "utils/variables.css";    
+@import "base/main.css";
+@import "base/media.css";           
+@import "components/btn.css";
+@import "components/carousel.css";
+@import "components/hero.css";
+@import "components/menu.css";
+@import "layout/footer.css";
+@import "layout/header.css";
+@import "layout/secion.css";
+@import "utils/variables.css";
+@import "vendors/normalize.css";
