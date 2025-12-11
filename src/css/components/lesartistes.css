@@ -1,0 +1,155 @@
+/* ========================================
+   PAGE LES ARTISTES
+======================================== */
+
+/* HERO ARTISTES */
+#hero-artistes {
+  margin-top: 72px;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.hero-content {
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  padding: 0 1.5rem 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* LISTE DES ARTISTES */
+#artistes {
+  padding: 2rem 1.5rem 3rem;
+  background-color: #fff;
+}
+
+#artistes .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.artiste-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.artiste-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.artiste-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.artiste-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artiste-info {
+  padding: 1.25rem;
+}
+
+.artiste-tag {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #28a745;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.artiste-info h3 {
+  font-size: 1.25rem;
+  color: #2c5f2d;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.artiste-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.artiste-details p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lien-profil {
+  color: #28a745;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.3s;
+}
+
+.lien-profil:hover {
+  gap: 0.6rem;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  #artistes .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #artistes .section-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .artiste-image {
+    height: 220px;
+  }
+}
