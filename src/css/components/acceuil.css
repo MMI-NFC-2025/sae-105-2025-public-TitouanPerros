@@ -1,3 +1,4 @@
+
 section {
   padding: 24px 16px;
   max-width: 480px;
@@ -74,3 +75,250 @@ section header p {
 .date-card--highlight .date-description {
   color: #ffffff;
 }
+/* bas de page */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Découvrez le Festival */
+#decouvrez-festival {
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
+}
+
+#decouvrez-festival header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#decouvrez-festival h2 {
+  font-size: 1.8rem;
+  color: #2c5f2d;
+  font-weight: 600;
+}
+
+.festival-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.festival-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.festival-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.festival-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.festival-card h3 {
+  font-size: 1rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.festival-card p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Section Festival Écoresponsable */
+#festival-ecoresponsable {
+  padding: 3rem 1.5rem;
+  background-color: white;
+}
+
+#festival-ecoresponsable header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#festival-ecoresponsable h2 {
+  font-size: 1.8rem;
+  color: #2c5f2d;
+  font-weight: 600;
+}
+
+.eco-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.eco-image {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.eco-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.eco-text p {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.eco-list {
+  list-style: none;
+}
+
+.eco-list li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.eco-list .eco-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.eco-list .eco-text-content {
+  flex: 1;
+}
+
+.eco-list h3 {
+  font-size: 1rem;
+  color: #2c5f2d;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.eco-list p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Section Nos Partenaires */
+#partenaires {
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
+}
+
+#partenaires header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#partenaires h2 {
+  font-size: 1.8rem;
+  color: #2c5f2d;
+  font-weight: 600;
+}
+
+.partners-logos {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.partners-logos img {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.partners-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Responsive Design */
+  #decouvrez-festival {
+    padding: 4rem 2rem;
+  }
+
+  #decouvrez-festival h2 {
+    font-size: 2.2rem;
+  }
+
+  .festival-cards {
+    gap: 1.5rem;
+    max-width: 900px;
+  }
+
+  .festival-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .festival-card h3 {
+    font-size: 1.1rem;
+  }
+
+  #festival-ecoresponsable {
+    padding: 4rem 2rem;
+  }
+
+  #festival-ecoresponsable h2 {
+    font-size: 2.2rem;
+  }
+
+  .eco-content {
+    max-width: 400px;
+  }
+
+  #partenaires {
+    padding: 4rem 2rem;
+  }
+
+  #partenaires h2 {
+    font-size: 2.2rem;
+  }
+
+  .festival-cards {
+    max-width: 1000px;
+  }

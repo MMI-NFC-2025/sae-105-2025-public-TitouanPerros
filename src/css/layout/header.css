@@ -1,30 +1,238 @@
-.header {
-    position: fixed;
-    z-index: 1000;;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow:0px 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-.burger-btn {
-    border: none;
-    background: transparent;
-    width: 24px;
-    height: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+/* HEADER FIXE */
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  background: #ffffff;
+  box-sizing: border-box;
+  min-height: 72px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Logo / marque */
+.header .brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header .brand img {
+  height: 52px;
+  width: auto;
+  display: block;
+  margin-left: 12px;
+}
+
+/* Burger button - z-index plus élevé */
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0;
+  margin-right: 12px;
+  position: relative;
+  z-index: 1002;
+}
+
+/* Focus accessible */
+.burger-btn:focus {
+  outline: 3px solid rgba(0, 120, 215, 0.16);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Les trois traits */
 .burger-btn span {
-    display: block;
-    height: 2px;
-    background: #000; /* couleur des barres */
-    width: 100%;
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #111;
+  border-radius: 4px;
+  margin: 4px 0;
+  transition: transform 180ms ease, opacity 180ms ease;
+  box-shadow: none;
+}
+
+/* Animation du burger en X quand le menu est ouvert */
+.burger-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+
+.burger-btn.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.burger-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+
+/* MENU MOBILE */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 2rem 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav ul li {
+  margin: 0;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  padding: 1.25rem 2rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.2s, color 0.2s;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-nav ul li a:hover,
+.mobile-nav ul li a:active {
+  background-color: #f8f9fa;
+  color: #2c5f2d;
+}
+
+/* Overlay pour fermer le menu */
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Empêcher le scroll quand le menu est ouvert */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* SECTION HERO - En dessous du header fixe */
+#hero-festival,
+#hero {
+  margin-top: 72px; /* Hauteur du header */
+}
+
+/* Navigation menu - page Menu (si vous l'utilisez ailleurs) */
+.nav_menu.menu-page {
+  display: block;
+  padding: 28px 24px;
+  background: transparent;
+  margin-top: 0;
+}
+
+.nav_menu.menu-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.nav_menu.menu-page a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 6px 0;
+  transition: color 150ms ease;
+}
+
+.nav_menu.menu-page a:hover,
+.nav_menu.menu-page a:focus {
+  color: #c0392b;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+    min-height: 64px;
+  }
+  
+  .header .brand img {
+    height: 44px;
+    margin-left: 8px;
+  }
+  
+  .burger-btn {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    padding: 6px;
+  }
+  
+  .burger-btn span {
+    width: 22px;
+    height: 3px;
+    margin: 3px 0;
+  }
+  
+  .nav_menu.menu-page ul {
+    gap: 12px;
+  }
+  
+  /* Hero en dessous du header mobile */
+  #hero-festival,
+  #hero {
+    margin-top: 64px;
+  }
 }

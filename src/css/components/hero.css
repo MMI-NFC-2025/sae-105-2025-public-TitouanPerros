@@ -1,3 +1,4 @@
+
 #hero {
   position: relative;
   height: auto;
@@ -7,11 +8,13 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Image de fond */
 .hero-background {
-margin-top: 80px;
+  margin-top: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,12 +27,12 @@ margin-top: 80px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.55); /* assombrissement pour lisibilité */
+  filter: brightness(0.55);
 }
 
 /* Contenu */
 .hero-content {
-  padding: 120px 20px 60px; 
+  padding: 80px 20px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,8 +58,6 @@ margin-top: 80px;
   margin: 0 0 20px;
 }
 
-/* Liste des infos */
-
 .hero-infos {
   list-style: none;
   padding: 0;
@@ -71,7 +72,7 @@ margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(10px); /* effet flou translucide */
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
   padding: 14px 20px;
   border-radius: 40px;
@@ -86,7 +87,6 @@ margin-top: 80px;
   display: flex;
 }
 
-/* BOUTON */
 .hero-button {
   margin-top: 20px;
   background: #2fbf4a;
@@ -94,19 +94,8 @@ margin-top: 80px;
   padding: 14px 28px;
   border-radius: 40px;
   text-decoration: none;
-  font-size:var(--14);
+  font-size: var(--14);
   font-weight: normal;
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.hero-button:hover {
-  background: #27a440;
-}
-
-/* Icône dans le bouton */
-.hero-button-icon {
-  display: flex;
-  font-size: 18px;
 }
