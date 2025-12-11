@@ -1,0 +1,76 @@
+section {
+  padding: 24px 16px;
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+section header h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  text-align: center;
+  color: #15803d; /* vert titre */
+}
+
+section header p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  text-align: center;
+  color: #6b7280;
+}
+
+#dates-cles{
+  background: #f9fafb;
+}
+
+#dates-cles .dates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date-card {
+  background: #ecfdf3;
+  border-radius: 16px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.date-card h3 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #16a34a;
+}
+
+.date-number {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.date-month {
+  margin: 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.date-description {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* carte centrale mise en avant */
+.date-card--highlight {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.date-card--highlight h3,
+.date-card--highlight .date-number,
+.date-card--highlight .date-month,
+.date-card--highlight .date-description {
+  color: #ffffff;
+}
