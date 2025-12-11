@@ -1,0 +1,217 @@
+/* ========================================
+   PAGE LES SCÈNES
+======================================== */
+
+/* HERO SCÈNES */
+#hero-scenes {
+  margin-top: 72px;
+  padding: 2.5rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* LISTE DES SCÈNES */
+#scenes {
+  padding: 2rem 1.5rem 3rem;
+  background-color: #fff;
+}
+
+#scenes .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scene-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.scene-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.scene-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.scene-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.scene-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 1.5rem 1.25rem 1rem;
+}
+
+.scene-overlay h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.scene-info {
+  padding: 1.5rem 1.25rem;
+}
+
+.scene-lieu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.scene-lieu svg {
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+.scene-lieu span {
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.scene-adresse {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 1rem;
+  padding-left: 1.75rem;
+}
+
+.scene-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.scene-capacite,
+.scene-concerts {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.scene-capacite svg,
+.scene-concerts svg {
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+.lien-details {
+  color: #28a745;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  transition: gap 0.3s;
+}
+
+.lien-details:hover {
+  gap: 0.6rem;
+  text-decoration: underline;
+}
+
+/* PLAN DU FESTIVAL */
+#plan-festival {
+  padding: 2rem 1.5rem 3rem;
+  background-color: #f9f9f9;
+}
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan-header svg {
+  color: #28a745;
+}
+
+.plan-header h2 {
+  font-size: 1.4rem;
+  color: #2c5f2d;
+  margin: 0;
+  font-weight: 600;
+}
+
+.plan-placeholder {
+  background: #e9ecef;
+  border-radius: 12px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.plan-placeholder svg {
+  color: #adb5bd;
+}
+
+.plan-placeholder p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  #scenes .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .scene-image {
+    height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #scenes .section-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
