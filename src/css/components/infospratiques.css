@@ -1,0 +1,344 @@
+/* ========================================
+   PAGE INFOS PRATIQUES
+======================================== */
+
+/* HERO */
+#hero-infos {
+  margin-top: 72px;
+  padding: 2.5rem 1.5rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* SECTIONS COMMUNES */
+section {
+  padding: 2.5rem 1.5rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #2c5f2d;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* BILLETTERIE */
+#billetterie {
+  background-color: #fff;
+}
+
+.billet-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.billet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.billet-header h3 {
+  font-size: 1.1rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.billet-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.billet-prix {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.btn-reserver {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-reserver:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.billet-card.gratuit {
+  background-color: #f8f9fa;
+  border: 2px dashed #28a745;
+}
+
+.billet-note {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* HÉBERGEMENT */
+#hebergement {
+  background-color: #f9f9f9;
+}
+
+.hebergement-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.hebergement-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.hebergement-info h3 {
+  font-size: 1.05rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.hebergement-info > p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.hebergement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.hebergement-list li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.hebergement-list li::before {
+  content: "📍";
+  position: absolute;
+  left: 0;
+  font-size: 0.75rem;
+}
+
+.lien-hebergement {
+  color: #28a745;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.3s;
+}
+
+.lien-hebergement:hover {
+  text-decoration: underline;
+}
+
+/* COMMENT VENIR */
+#comment-venir {
+  background-color: #fff;
+}
+
+.transport-card {
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.transport-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.transport-info h3 {
+  font-size: 1.05rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.transport-info > p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.transport-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transport-list li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.transport-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* ACCESSIBILITÉ */
+#accessibilite {
+  background-color: #f9f9f9;
+}
+
+.accessibilite-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.accessibilite-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.accessibilite-item p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* FAQ */
+#faq {
+  background-color: #fff;
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.faq-item:hover {
+  border-color: #28a745;
+}
+
+.faq-item summary {
+  font-size: 0.95rem;
+  color: #2c5f2d;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "⌄";
+  font-size: 1.2rem;
+  color: #28a745;
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .billet-header {
+    align-items: center;
+  }
+
+  .hebergement-card,
+  .transport-card {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #billetterie .section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .billet-card {
+    margin-bottom: 0;
+  }
+
+  .billet-card.gratuit {
+    grid-column: 1 / -1;
+  }
+}
