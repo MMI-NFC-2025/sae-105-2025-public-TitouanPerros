@@ -31,7 +31,7 @@
 }
 
 /* Contenu */
-.hero-content {
+.hero-content1 {
   padding: 80px 20px 60px;
   display: flex;
   flex-direction: column;
@@ -40,13 +40,13 @@
   font-family: Arial;
 }
 
-.hero-content h1 {
+.hero-content1 h1 {
   font-size: var(--36);
   font-weight: lighter;
   margin: 0;
 }
 
-.hero-subtitle {
+.hero-subtitle1 {
   font-size: var(--20);
   font-weight: lighter;
   margin: 0;
