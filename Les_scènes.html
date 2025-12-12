@@ -9,19 +9,19 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <a href="index.html">
-    <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
     <div class="search-container">
-    <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher">
-    <button class="search-btn" aria-label="Rechercher">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
-      </svg>
-    </button>
-  </div>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -29,41 +29,42 @@
   </header>
 
   <!-- NAVIGATION MOBILE -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-label="Aller à la page d'accueil">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-label="Découvrir le festival">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-label="Voir les artistes">Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-current="page" aria-label="Les scènes du festival (page actuelle)">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO SCÈNES -->
-  <section id="hero-scenes">
+  <section id="hero-scenes" aria-labelledby="hero-title">
     <div class="hero-content">
-      <h1>Les Scènes</h1>
+      <h1 id="hero-title">Les Scènes</h1>
       <p class="hero-subtitle">Trois lieux emblématiques au cœur de Montbéliard</p>
     </div>
   </section>
 
   <!-- LISTE DES SCÈNES -->
-  <section id="scenes">
+  <section id="scenes" aria-labelledby="scenes-title">
     <div class="section-container">
+      <h2 id="scenes-title" class="sr-only">Liste des scènes du festival</h2>
       
       <!-- Scène 1 -->
-      <article class="scene-card">
+      <article class="scene-card" aria-labelledby="scene1-title">
         <div class="scene-image">
-          <img src="assets/images/container4.avif" alt="Place des Halles" lazy="loading">
+          <img src="assets/images/container4.avif" alt="Vue de la Place des Halles avec ses bâtiments historiques" loading="lazy">
           <div class="scene-overlay">
-            <h3>Place des Halles</h3>
+            <h3 id="scene1-title">Place des Halles</h3>
           </div>
         </div>
         <div class="scene-info">
           <div class="scene-lieu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
@@ -74,37 +75,37 @@
             Scène principale du festival située au cœur historique de Montbéliard. Cette place emblématique accueille les plus grands concerts.
           </p>
           <div class="scene-capacite">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
               <circle cx="9" cy="7" r="4"></circle>
               <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
-            Capacité : 3000 personnes
+            <span aria-label="Capacité d'accueil">Capacité : 3000 personnes</span>
           </div>
           <div class="scene-concerts">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M9 18V5l12-2v13"></path>
               <circle cx="6" cy="18" r="3"></circle>
               <circle cx="18" cy="16" r="3"></circle>
             </svg>
-            3 concerts programmés
+            <span aria-label="Nombre de concerts">3 concerts programmés</span>
           </div>
-          <a href="erreur.html" class="lien-details">Voir les détails →</a>
+          <a href="erreur.html" class="lien-details" aria-label="Voir les détails de la Place des Halles">Voir les détails →</a>
         </div>
       </article>
 
       <!-- Scène 2 -->
-      <article class="scene-card">
+      <article class="scene-card" aria-labelledby="scene2-title">
         <div class="scene-image">
-          <img src="assets/images/container5.avif" alt="Scène Verte" lazy="loading">
+          <img src="assets/images/container5.avif" alt="Scène Verte installée dans les jardins verdoyants" loading="lazy">
           <div class="scene-overlay">
-            <h3>Scène Verte</h3>
+            <h3 id="scene2-title">Scène Verte</h3>
           </div>
         </div>
         <div class="scene-info">
           <div class="scene-lieu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
@@ -115,37 +116,37 @@
             Scène écoresponsable installée dans les jardins de Montbéliard, alimentée par des énergies renouvelables.
           </p>
           <div class="scene-capacite">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
               <circle cx="9" cy="7" r="4"></circle>
               <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
-            Capacité : 1500 personnes
+            <span aria-label="Capacité d'accueil">Capacité : 1500 personnes</span>
           </div>
           <div class="scene-concerts">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M9 18V5l12-2v13"></path>
               <circle cx="6" cy="18" r="3"></circle>
               <circle cx="18" cy="16" r="3"></circle>
             </svg>
-            3 concerts programmés
+            <span aria-label="Nombre de concerts">3 concerts programmés</span>
           </div>
-          <a href="erreur.html" class="lien-details">Voir les détails →</a>
+          <a href="erreur.html" class="lien-details" aria-label="Voir les détails de la Scène Verte">Voir les détails →</a>
         </div>
       </article>
 
       <!-- Scène 3 -->
-      <article class="scene-card">
+      <article class="scene-card" aria-labelledby="scene3-title">
         <div class="scene-image">
-          <img src="assets/images/container6.avif" alt="Rue de la Musique" lazy="loading">
+          <img src="assets/images/container6.avif" alt="Rue de la Musique avec ses façades colorées et ambiance conviviale" loading="lazy">
           <div class="scene-overlay">
-            <h3>Rue de la Musique</h3>
+            <h3 id="scene3-title">Rue de la Musique</h3>
           </div>
         </div>
         <div class="scene-info">
           <div class="scene-lieu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
@@ -156,23 +157,23 @@
             Scène intimiste dans une rue piétonne, parfaite pour découvrir les artistes émergents et profiter d'une ambiance conviviale.
           </p>
           <div class="scene-capacite">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
               <circle cx="9" cy="7" r="4"></circle>
               <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
-            Capacité : 500 personnes
+            <span aria-label="Capacité d'accueil">Capacité : 500 personnes</span>
           </div>
           <div class="scene-concerts">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M9 18V5l12-2v13"></path>
               <circle cx="6" cy="18" r="3"></circle>
               <circle cx="18" cy="16" r="3"></circle>
             </svg>
-            2 concerts programmés
+            <span aria-label="Nombre de concerts">2 concerts programmés</span>
           </div>
-          <a href="erreur.html" class="lien-details">Voir les détails →</a>
+          <a href="erreur.html" class="lien-details" aria-label="Voir les détails de la Rue de la Musique">Voir les détails →</a>
         </div>
       </article>
 
@@ -180,17 +181,17 @@
   </section>
 
   <!-- PLAN DU FESTIVAL -->
-  <section id="plan-festival">
+  <section id="plan-festival" aria-labelledby="plan-title">
     <div class="section-container">
       <div class="plan-header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
           <circle cx="12" cy="10" r="3"></circle>
         </svg>
-        <h2>Plan du Festival</h2>
+        <h2 id="plan-title">Plan du Festival</h2>
       </div>
-      <div class="plan-placeholder">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <div class="plan-placeholder" role="img" aria-label="Plan interactif du festival, disponible prochainement">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <circle cx="12" cy="12" r="10"></circle>
           <path d="M12 16v-4"></path>
           <path d="M12 8h.01"></path>
@@ -201,76 +202,76 @@
   </section>
 
   <!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-container">
-    <!-- En-tête du footer -->
-    <div class="footer-header">
-      <div class="footer-logo">
-        <img src="assets/Icones/Logo fanfare.svg" alt="Logo Festival des Rues" lazy="loading">
+  <footer id="footer" role="contentinfo" aria-label="Informations de contact et navigation secondaire">
+    <div class="footer-container">
+      <!-- En-tête du footer -->
+      <div class="footer-header">
+        <div class="footer-logo">
+          <img src="assets/Icones/Logo fanfare.svg" alt="Logo du Festival des Rues" loading="lazy">
+        </div>
+        <div class="footer-intro">
+          <h3>Festival des Rues</h3>
+          <p class="footer-location">Montbéliard</p>
+          <p class="footer-description">
+            Le festival de musique de rue et fanfare écoresponsable de Montbéliard
+          </p>
+        </div>
       </div>
-      <div class="footer-intro">
-        <h3>Festival des Rues</h3>
-        <p class="footer-location">Montbéliard</p>
-        <p class="footer-description">
-          Le festival de musique de rue et fanfare écoresponsable de Montbéliard
-        </p>
+
+      <!-- Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire du pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a></li>
+          <li><a href="Le_programme.html" aria-label="Consulter le programme complet">Programme</a></li>
+          <li><a href="Les_artistes.html" aria-label="Découvrir les artistes">Artistes</a></li>
+          <li><a href="Infos_pratiques.html" aria-label="Obtenir des informations pratiques">Infos Pratiques</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <img src="assets/Icones/Localisation.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span aria-label="Adresse">Montbéliard 25200</span>
+          </li>
+          <li>
+            <img src="assets/Icones/lettre.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="mailto:contact@lafanfarecomtoise.fr" aria-label="Nous envoyer un email">contact@lafanfarecomtoise.fr</a>
+          </li>
+          <li>
+            <img src="assets/Icones/Telephone.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="tel:+33381000000" aria-label="Nous appeler au 03 81 XX XX XX">03 81 XX XX XX</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="footer-social">
+        <h4>Suivez-nous</h4>
+        <div class="social-links" role="list" aria-label="Liens vers nos réseaux sociaux">
+          <a href="erreur.html" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/Link.svg" alt="Icône Facebook">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/insta.svg" alt="Icône Instagram">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/twitter.svg" alt="Icône Twitter">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
       </div>
     </div>
+  </footer>
 
-    <!-- Navigation -->
-    <nav class="footer-nav">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="Le_festival.html">Le Festival</a></li>
-        <li><a href="Le_programme.html">Programme</a></li>
-        <li><a href="Les_artistes.html">Artistes</a></li>
-        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
-      </ul>
-    </nav>
-
-    <!-- Contact -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <ul>
-        <li>
-          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
-          Montbéliard 25200
-        </li>
-        <li>
-          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
-          contact@lafanfarecomtoise.fr
-        </li>
-        <li>
-          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
-          03 81 XX XX XX
-        </li>
-      </ul>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-social">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="erreur.html" aria-label="Facebook">
-          <img src="assets/Icones/Link.svg" alt="Facebook">
-        </a>
-        <a href="erreur.html" aria-label="Instagram">
-          <img src="assets/Icones/insta.svg" alt="Instagram">
-        </a>
-        <a href="erreur.html" aria-label="Twitter">
-            <img src="assets/Icones/twitter.svg" alt="Twitter">
-        </a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="src/js/main.js"></script>
-<script src="src/js/carousel.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/carousel.js"></script>
 </body>
 </html>

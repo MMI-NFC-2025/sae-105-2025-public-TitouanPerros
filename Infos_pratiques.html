@@ -9,19 +9,19 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <a href="index.html">
-    <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
     <div class="search-container">
-    <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher">
-    <button class="search-btn" aria-label="Rechercher">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
-      </svg>
-    </button>
-  </div>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -29,139 +29,139 @@
   </header>
 
   <!-- NAVIGATION MOBILE -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-label="Aller à la page d'accueil">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-label="Découvrir le festival">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-label="Voir les artistes">Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-label="Découvrir les scènes">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-current="page" aria-label="Infos pratiques (page actuelle)">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
-  <section id="hero-infos">
+  <section id="hero-infos" aria-labelledby="hero-title">
     <div class="hero-content">
-      <h1>Infos Pratiques</h1>
+      <h1 id="hero-title">Infos Pratiques</h1>
       <p class="hero-subtitle">Tout ce qu'il faut savoir pour profiter du festival</p>
     </div>
   </section>
 
   <!-- BILLETTERIE -->
-  <section id="billetterie">
+  <section id="billetterie" aria-labelledby="billetterie-title">
     <div class="section-container">
-      <h2>Billetterie</h2>
+      <h2 id="billetterie-title">Billetterie</h2>
 
       <!-- Pass 1 Jour -->
-      <article class="billet-card">
+      <article class="billet-card" aria-labelledby="billet1-title">
         <div class="billet-header">
           <div>
-            <h3>Pass 1 Jour</h3>
+            <h3 id="billet1-title">Pass 1 Jour</h3>
             <p class="billet-desc">Accès à toutes les scènes, 1 jour au choix. Restauration et boissons non comprises</p>
           </div>
-          <div class="billet-prix">25€</div>
+          <div class="billet-prix" aria-label="Prix">25€</div>
         </div>
-        <button class="btn-reserver" onclick="window.location.href='erreur.html'">🎟 Réserver</button>
+        <button class="btn-reserver" onclick="window.location.href='erreur.html'" aria-label="Réserver un Pass 1 Jour à 25 euros">🎟 Réserver</button>
       </article>
 
       <!-- Pass 3 Jours -->
-      <article class="billet-card">
+      <article class="billet-card" aria-labelledby="billet2-title">
         <div class="billet-header">
           <div>
-            <h3>Pass 3 Jours</h3>
+            <h3 id="billet2-title">Pass 3 Jours</h3>
             <p class="billet-desc">Accès à toutes les scènes, les 3 jours du festival. Restauration et boissons non comprises</p>
           </div>
-          <div class="billet-prix">60€</div>
+          <div class="billet-prix" aria-label="Prix">60€</div>
         </div>
-        <button class="btn-reserver" onclick="window.location.href='erreur.html'">🎟 Réserver</button>
+        <button class="btn-reserver" onclick="window.location.href='erreur.html'" aria-label="Réserver un Pass 3 Jours à 60 euros">🎟 Réserver</button>
       </article>
 
       <!-- Tarif Réduit -->
-      <article class="billet-card">
+      <article class="billet-card" aria-labelledby="billet3-title">
         <div class="billet-header">
           <div>
-            <h3>Tarif Réduit</h3>
+            <h3 id="billet3-title">Tarif Réduit</h3>
             <p class="billet-desc">Étudiants, -18 ans, seniors, carte 1 jour. Justificatif obligatoire à l'entrée.</p>
           </div>
-          <div class="billet-prix">15€</div>
+          <div class="billet-prix" aria-label="Prix">15€</div>
         </div>
-        <button class="btn-reserver" onclick="window.location.href='erreur.html'">🎟 Réserver</button>
+        <button class="btn-reserver" onclick="window.location.href='erreur.html'" aria-label="Réserver un billet à tarif réduit à 15 euros">🎟 Réserver</button>
       </article>
 
       <!-- Gratuit -->
-      <article class="billet-card gratuit">
+      <article class="billet-card gratuit" aria-labelledby="billet4-title">
         <div class="billet-header">
           <div>
-            <h3>Gratuit pour les -12 ans</h3>
+            <h3 id="billet4-title">Gratuit pour les -12 ans</h3>
             <p class="billet-desc">Sur présentation d'une pièce d'identité</p>
           </div>
         </div>
-        <p class="billet-note " onclick="window.location.href='erreur.html'">Les concerts en journée dans les rues sont entièrement libres et gratuits</p>
+        <p class="billet-note">Les concerts en journée dans les rues sont entièrement libres et gratuits</p>
       </article>
     </div>
   </section>
 
   <!-- HÉBERGEMENT -->
-  <section id="hebergement">
+  <section id="hebergement" aria-labelledby="hebergement-title">
     <div class="section-container">
-      <h2>Hébergement</h2>
+      <h2 id="hebergement-title">Hébergement</h2>
 
       <!-- Hôtels -->
-      <article class="hebergement-card">
-        <div class="hebergement-icon">🏨</div>
+      <article class="hebergement-card" aria-labelledby="hebergement1-title">
+        <div class="hebergement-icon" role="img" aria-label="Icône hôtel">🏨</div>
         <div class="hebergement-info">
-          <h3>Hôtels</h3>
+          <h3 id="hebergement1-title">Hôtels</h3>
           <p>Plusieurs hôtels à proximité du centre-ville</p>
           <ul class="hebergement-list">
             <li>2 à 4 étoiles</li>
             <li>À partir de 60€ la nuit</li>
           </ul>
-          <a href="#" class="lien-hebergement" onclick="window.location.href='erreur.html'">Réserver →</a>
+          <a href="erreur.html" class="lien-hebergement" aria-label="Réserver un hôtel">Réserver →</a>
         </div>
       </article>
 
       <!-- Campings -->
-      <article class="hebergement-card">
-        <div class="hebergement-icon">⛺</div>
+      <article class="hebergement-card" aria-labelledby="hebergement2-title">
+        <div class="hebergement-icon" role="img" aria-label="Icône camping">⛺</div>
         <div class="hebergement-info">
-          <h3>Campings</h3>
+          <h3 id="hebergement2-title">Campings</h3>
           <p>Plusieurs emplacements de camping</p>
           <ul class="hebergement-list">
             <li>2 à 3 km du centre</li>
             <li>À partir de 20€ la nuit</li>
           </ul>
-          <a href="#" class="lien-hebergement" onclick="window.location.href='erreur.html'">Réserver →</a>
+          <a href="erreur.html" class="lien-hebergement" aria-label="Réserver un emplacement de camping">Réserver →</a>
         </div>
       </article>
 
       <!-- Autres options -->
-      <article class="hebergement-card">
-        <div class="hebergement-icon">🏡</div>
+      <article class="hebergement-card" aria-labelledby="hebergement3-title">
+        <div class="hebergement-icon" role="img" aria-label="Icône maison">🏡</div>
         <div class="hebergement-info">
-          <h3>Autres options</h3>
+          <h3 id="hebergement3-title">Autres options</h3>
           <p>Airbnb, gîtes chez les particuliers, hébergement chez l'habitant</p>
           <ul class="hebergement-list">
             <li>Variés</li>
             <li>Dès 30€ la nuit</li>
           </ul>
-          <a href="#" class="lien-hebergement" onclick="window.location.href='erreur.html'">Réserver →</a>
+          <a href="erreur.html" class="lien-hebergement" aria-label="Réserver un autre type d'hébergement">Réserver →</a>
         </div>
       </article>
     </div>
   </section>
 
   <!-- COMMENT VENIR -->
-  <section id="comment-venir">
+  <section id="comment-venir" aria-labelledby="transport-title">
     <div class="section-container">
-      <h2>Comment venir ?</h2>
+      <h2 id="transport-title">Comment venir ?</h2>
 
       <!-- En train -->
-      <article class="transport-card">
-        <div class="transport-icon">🚆</div>
+      <article class="transport-card" aria-labelledby="transport1-title">
+        <div class="transport-icon" role="img" aria-label="Icône train">🚆</div>
         <div class="transport-info">
-          <h3>En train</h3>
+          <h3 id="transport1-title">En train</h3>
           <p>Gare de Montbéliard à 10 min à pied du centre-ville</p>
           <ul class="transport-list">
             <li>TGV : Belfort-TGV</li>
@@ -172,10 +172,10 @@
       </article>
 
       <!-- En voiture -->
-      <article class="transport-card">
-        <div class="transport-icon">🚗</div>
+      <article class="transport-card" aria-labelledby="transport2-title">
+        <div class="transport-icon" role="img" aria-label="Icône voiture">🚗</div>
         <div class="transport-info">
-          <h3>En voiture</h3>
+          <h3 id="transport2-title">En voiture</h3>
           <p>Plusieurs parkings disponibles en ville/relais</p>
           <ul class="transport-list">
             <li>Parkings gratuits</li>
@@ -186,10 +186,10 @@
       </article>
 
       <!-- À vélo -->
-      <article class="transport-card">
-        <div class="transport-icon">🚲</div>
+      <article class="transport-card" aria-labelledby="transport3-title">
+        <div class="transport-icon" role="img" aria-label="Icône vélo">🚲</div>
         <div class="transport-info">
-          <h3>À vélo</h3>
+          <h3 id="transport3-title">À vélo</h3>
           <p>Stationnements vélo sécurisés et gratuits</p>
           <ul class="transport-list">
             <li>Parkings vélo sécurisés à côté des scènes</li>
@@ -198,10 +198,10 @@
       </article>
 
       <!-- En bus -->
-      <article class="transport-card">
-        <div class="transport-icon">🚌</div>
+      <article class="transport-card" aria-labelledby="transport4-title">
+        <div class="transport-icon" role="img" aria-label="Icône bus">🚌</div>
         <div class="transport-info">
-          <h3>En bus</h3>
+          <h3 id="transport4-title">En bus</h3>
           <p>Réseau CTPM - Lignes 1, 2 et 3</p>
           <ul class="transport-list">
             <li>Arrêt Centre-Ville : 1, 2 et 3</li>
@@ -213,31 +213,31 @@
   </section>
 
   <!-- ACCESSIBILITÉ -->
-  <section id="accessibilite">
+  <section id="accessibilite" aria-labelledby="accessibilite-title">
     <div class="section-container">
-      <h2>Accessibilité</h2>
+      <h2 id="accessibilite-title">Accessibilité</h2>
 
       <article class="accessibilite-item">
-        <div class="accessibilite-icon">♿</div>
+        <div class="accessibilite-icon" role="img" aria-label="Symbole d'accessibilité">♿</div>
         <p>Le festival est entièrement accessible aux personnes à mobilité réduite avec des rampes d'accès</p>
       </article>
 
       <article class="accessibilite-item">
-        <div class="accessibilite-icon">♿</div>
+        <div class="accessibilite-icon" role="img" aria-label="Symbole d'accessibilité">♿</div>
         <p>Toilettes PMR disponibles sur chaque site</p>
       </article>
 
       <article class="accessibilite-item">
-        <div class="accessibilite-icon">📧</div>
-        <p>Pour toute demande spécifique, contactez-nous à accessibilite@lafanfarecomtoise.fr</p>
+        <div class="accessibilite-icon" role="img" aria-label="Icône email">📧</div>
+        <p>Pour toute demande spécifique, contactez-nous à <a href="mailto:accessibilite@lafanfarecomtoise.fr" aria-label="Envoyer un email concernant l'accessibilité">accessibilite@lafanfarecomtoise.fr</a></p>
       </article>
     </div>
   </section>
 
   <!-- QUESTIONS FRÉQUENTES -->
-  <section id="faq">
+  <section id="faq" aria-labelledby="faq-title">
     <div class="section-container">
-      <h2>Questions Fréquentes</h2>
+      <h2 id="faq-title">Questions Fréquentes</h2>
 
       <details class="faq-item">
         <summary>Le festival est-il accessible aux personnes à mobilité réduite ?</summary>
@@ -265,83 +265,83 @@
       </details>
 
       <details class="faq-item">
-        <summary>Puis-on apporter à un tabler et de naturel pas verre ?</summary>
+        <summary>Peut-on apporter de la nourriture et des bouteilles en verre ?</summary>
         <p>Les bouteilles en verre, objets contondants et nourriture extérieure ne sont pas autorisés pour des raisons de sécurité.</p>
       </details>
     </div>
   </section>
 
   <!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-container">
-    <!-- En-tête du footer -->
-    <div class="footer-header">
-      <div class="footer-logo">
-        <img src="assets/Icones/Logo fanfare.svg" alt="Logo Festival des Rues">
+  <footer id="footer" role="contentinfo" aria-label="Informations de contact et navigation secondaire">
+    <div class="footer-container">
+      <!-- En-tête du footer -->
+      <div class="footer-header">
+        <div class="footer-logo">
+          <img src="assets/Icones/Logo fanfare.svg" alt="Logo du Festival des Rues" loading="lazy">
+        </div>
+        <div class="footer-intro">
+          <h3>Festival des Rues</h3>
+          <p class="footer-location">Montbéliard</p>
+          <p class="footer-description">
+            Le festival de musique de rue et fanfare écoresponsable de Montbéliard
+          </p>
+        </div>
       </div>
-      <div class="footer-intro">
-        <h3>Festival des Rues</h3>
-        <p class="footer-location">Montbéliard</p>
-        <p class="footer-description">
-          Le festival de musique de rue et fanfare écoresponsable de Montbéliard
-        </p>
+
+      <!-- Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire du pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a></li>
+          <li><a href="Le_programme.html" aria-label="Consulter le programme complet">Programme</a></li>
+          <li><a href="Les_artistes.html" aria-label="Découvrir les artistes">Artistes</a></li>
+          <li><a href="Infos_pratiques.html" aria-label="Obtenir des informations pratiques">Infos Pratiques</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <img src="assets/Icones/Localisation.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span aria-label="Adresse">Montbéliard 25200</span>
+          </li>
+          <li>
+            <img src="assets/Icones/lettre.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="mailto:contact@lafanfarecomtoise.fr" aria-label="Nous envoyer un email">contact@lafanfarecomtoise.fr</a>
+          </li>
+          <li>
+            <img src="assets/Icones/Telephone.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="tel:+33381000000" aria-label="Nous appeler au 03 81 XX XX XX">03 81 XX XX XX</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="footer-social">
+        <h4>Suivez-nous</h4>
+        <div class="social-links" role="list" aria-label="Liens vers nos réseaux sociaux">
+          <a href="erreur.html" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/Link.svg" alt="Icône Facebook">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/insta.svg" alt="Icône Instagram">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/twitter.svg" alt="Icône Twitter">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
       </div>
     </div>
+  </footer>
 
-    <!-- Navigation -->
-    <nav class="footer-nav">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="Le_festival.html">Le Festival</a></li>
-        <li><a href="Le_programme.html">Programme</a></li>
-        <li><a href="Les_artistes.html">Artistes</a></li>
-        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
-      </ul>
-    </nav>
-
-    <!-- Contact -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <ul>
-        <li>
-          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
-          Montbéliard 25200
-        </li>
-        <li>
-          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
-          contact@lafanfarecomtoise.fr
-        </li>
-        <li>
-          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
-          03 81 XX XX XX
-        </li>
-      </ul>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-social">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="erreur.html" aria-label="Facebook">
-          <img src="assets/Icones/Link.svg" alt="Facebook">
-        </a>
-        <a href="erreur.html" aria-label="Instagram">
-          <img src="assets/Icones/insta.svg" alt="Instagram">
-        </a>
-        <a href="erreur.html" aria-label="Twitter">
-            <img src="assets/Icones/twitter.svg" alt="Twitter">
-        </a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="src/js/main.js"></script>
-<script src="src/js/carousel.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/carousel.js"></script>
 </body>
 </html>

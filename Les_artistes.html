@@ -9,19 +9,19 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <a href="index.html">
-    <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
     <div class="search-container">
-    <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher">
-    <button class="search-btn" aria-label="Rechercher">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
-      </svg>
-    </button>
-  </div>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -29,155 +29,156 @@
   </header>
 
   <!-- NAVIGATION MOBILE -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Les Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-label="Aller à la page d'accueil">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-label="Découvrir le festival">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-current="page" aria-label="Les artistes (page actuelle)">Les Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-label="Découvrir les scènes">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO ARTISTES -->
-  <section id="hero-artistes">
+  <section id="hero-artistes" aria-labelledby="hero-title">
     <div class="hero-content">
-      <h1>Les Artistes</h1>
+      <h1 id="hero-title">Les Artistes</h1>
       <p class="hero-subtitle">Découvrez tous les artistes qui feront vibrer les rues de Montbéliard</p>
     </div>
   </section>
 
   <!-- LISTE DES ARTISTES -->
-  <section id="artistes">
+  <section id="artistes" aria-labelledby="artistes-title">
     <div class="section-container">
+      <h2 id="artistes-title" class="sr-only">Liste des artistes du festival</h2>
       
       <!-- Artiste 1 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste1-name">
         <div class="artiste-image">
-          <img src="assets/images/container2.avif" alt="Les cuivres de Paris">
+          <img src="assets/images/container2.avif" alt="Les cuivres de Paris en concert avec leurs instruments de cuivre" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Fanfare</span>
-          <h3>Les cuivres de Paris</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Fanfare</span>
+          <h3 id="artiste1-name">Les cuivres de Paris</h3>
           <div class="artiste-details">
-            <p>📅 Sa. 21/06 à 21h</p>
-            <p>📍 Scène 2</p>
+            <p aria-label="Date et heure du concert">📅 Sa. 21/06 à 21h</p>
+            <p aria-label="Lieu du concert">📍 Scène 2</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Les cuivres de Paris">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 2 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste2-name">
         <div class="artiste-image">
-          <img src="assets/images/container3.avif" alt="Brass Against" lazy="loading">
+          <img src="assets/images/container3.avif" alt="Brass Against en performance de musique de rue" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Musique de rue</span>
-          <h3>Brass Against</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Musique de rue</span>
+          <h3 id="artiste2-name">Brass Against</h3>
           <div class="artiste-details">
-            <p>📅 Sa. 21/06</p>
-            <p>📍 Scène 2</p>
+            <p aria-label="Date du concert">📅 Sa. 21/06</p>
+            <p aria-label="Lieu du concert">📍 Scène 2</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Brass Against">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 3 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste3-name">
         <div class="artiste-image">
-          <img src="assets/images/container.avif" alt="La Rue Kétanou Brass" lazy="loading">
+          <img src="assets/images/container.avif" alt="La Rue Kétanou Brass jouant dans la rue avec enthousiasme" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Musique de rue</span>
-          <h3>La Rue Kétanou Brass</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Musique de rue</span>
+          <h3 id="artiste3-name">La Rue Kétanou Brass</h3>
           <div class="artiste-details">
-            <p>📅 Sa. 21/06 à 18h</p>
-            <p>📍 Scène 1</p>
+            <p aria-label="Date et heure du concert">📅 Sa. 21/06 à 18h</p>
+            <p aria-label="Lieu du concert">📍 Scène 1</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de La Rue Kétanou Brass">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 4 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste4-name">
         <div class="artiste-image">
-          <img src="assets/images/container2.avif" alt="Balkanic Brass Band" lazy="loading">
+          <img src="assets/images/container2.avif" alt="Balkanic Brass Band avec leurs instruments traditionnels" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Culottes</span>
-          <h3>Balkanic Brass Band</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Cuivres</span>
+          <h3 id="artiste4-name">Balkanic Brass Band</h3>
           <div class="artiste-details">
-            <p>📅 Di. 22/06 à 16h</p>
-            <p>📍 Scène 1</p>
+            <p aria-label="Date et heure du concert">📅 Di. 22/06 à 16h</p>
+            <p aria-label="Lieu du concert">📍 Scène 1</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Balkanic Brass Band">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 5 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste5-name">
         <div class="artiste-image">
-          <img src="assets/images/container3.avif" alt="Funky Street Orchestra" lazy="loading">
+          <img src="assets/images/container3.avif" alt="Funky Street Orchestra dans une ambiance festive de rue" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Fanfare de rue</span>
-          <h3>Funky Street Orchestra</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Fanfare de rue</span>
+          <h3 id="artiste5-name">Funky Street Orchestra</h3>
           <div class="artiste-details">
-            <p>📅 Ve. 20/06</p>
-            <p>📍 Scène 2</p>
+            <p aria-label="Date du concert">📅 Ve. 20/06</p>
+            <p aria-label="Lieu du concert">📍 Scène 2</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Funky Street Orchestra">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 6 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste6-name">
         <div class="artiste-image">
-          <img src="assets/images/container.avif" alt="Les Trompettes de Lyon" lazy="loading">
+          <img src="assets/images/container.avif" alt="Les Trompettes de Lyon en formation avec leurs trompettes étincelantes" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Fanfare</span>
-          <h3>Les Trompettes de Lyon</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Fanfare</span>
+          <h3 id="artiste6-name">Les Trompettes de Lyon</h3>
           <div class="artiste-details">
-            <p>📅 Sa. 21/06 à 20h</p>
-            <p>📍 Scène 1</p>
+            <p aria-label="Date et heure du concert">📅 Sa. 21/06 à 20h</p>
+            <p aria-label="Lieu du concert">📍 Scène 1</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Les Trompettes de Lyon">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 7 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste7-name">
         <div class="artiste-image">
-          <img src="assets/images/container2.avif" alt="Street Groove Collective" lazy="loading">
+          <img src="assets/images/container2.avif" alt="Street Groove Collective performant avec énergie" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Musique de rue</span>
-          <h3>Street Groove Collective</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Musique de rue</span>
+          <h3 id="artiste7-name">Street Groove Collective</h3>
           <div class="artiste-details">
-            <p>📅 Di. 22/06</p>
-            <p>📍 Scène 2</p>
+            <p aria-label="Date du concert">📅 Di. 22/06</p>
+            <p aria-label="Lieu du concert">📍 Scène 2</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de Street Groove Collective">Voir le profil →</a>
         </div>
       </article>
 
       <!-- Artiste 8 -->
-      <article class="artiste-card">
+      <article class="artiste-card" aria-labelledby="artiste8-name">
         <div class="artiste-image">
-          <img src="assets/images/container3.avif" alt="La Fanfare Afro-Jazz" lazy="loading">
+          <img src="assets/images/container3.avif" alt="La Fanfare Afro-Jazz mêlant rythmes africains et jazz" loading="lazy">
         </div>
         <div class="artiste-info">
-          <span class="artiste-tag">Fanfare</span>
-          <h3>La Fanfare Afro-Jazz</h3>
+          <span class="artiste-tag" aria-label="Genre musical">Fanfare</span>
+          <h3 id="artiste8-name">La Fanfare Afro-Jazz</h3>
           <div class="artiste-details">
-            <p>📅 Ve. 20/06</p>
-            <p>📍 Scène 1</p>
+            <p aria-label="Date du concert">📅 Ve. 20/06</p>
+            <p aria-label="Lieu du concert">📍 Scène 1</p>
           </div>
-          <a href="erreur.html" class="lien-profil">Voir le profil →</a>
+          <a href="erreur.html" class="lien-profil" aria-label="Voir le profil de La Fanfare Afro-Jazz">Voir le profil →</a>
         </div>
       </article>
 
@@ -185,76 +186,76 @@
   </section>
 
   <!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-container">
-    <!-- En-tête du footer -->
-    <div class="footer-header">
-      <div class="footer-logo">
-        <img src="assets/Icones/Logo fanfare.svg" alt="Logo Festival des Rues">
+  <footer id="footer" role="contentinfo" aria-label="Informations de contact et navigation secondaire">
+    <div class="footer-container">
+      <!-- En-tête du footer -->
+      <div class="footer-header">
+        <div class="footer-logo">
+          <img src="assets/Icones/Logo fanfare.svg" alt="Logo du Festival des Rues" loading="lazy">
+        </div>
+        <div class="footer-intro">
+          <h3>Festival des Rues</h3>
+          <p class="footer-location">Montbéliard</p>
+          <p class="footer-description">
+            Le festival de musique de rue et fanfare écoresponsable de Montbéliard
+          </p>
+        </div>
       </div>
-      <div class="footer-intro">
-        <h3>Festival des Rues</h3>
-        <p class="footer-location">Montbéliard</p>
-        <p class="footer-description">
-          Le festival de musique de rue et fanfare écoresponsable de Montbéliard
-        </p>
+
+      <!-- Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire du pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a></li>
+          <li><a href="Le_programme.html" aria-label="Consulter le programme complet">Programme</a></li>
+          <li><a href="Les_artistes.html" aria-label="Découvrir les artistes">Artistes</a></li>
+          <li><a href="Infos_pratiques.html" aria-label="Obtenir des informations pratiques">Infos Pratiques</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <img src="assets/Icones/Localisation.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span aria-label="Adresse">Montbéliard 25200</span>
+          </li>
+          <li>
+            <img src="assets/Icones/lettre.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="mailto:contact@lafanfarecomtoise.fr" aria-label="Nous envoyer un email">contact@lafanfarecomtoise.fr</a>
+          </li>
+          <li>
+            <img src="assets/Icones/Telephone.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="tel:+33381000000" aria-label="Nous appeler au 03 81 XX XX XX">03 81 XX XX XX</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="footer-social">
+        <h4>Suivez-nous</h4>
+        <div class="social-links" role="list" aria-label="Liens vers nos réseaux sociaux">
+          <a href="erreur.html" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/Link.svg" alt="Icône Facebook">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/insta.svg" alt="Icône Instagram">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/twitter.svg" alt="Icône Twitter">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
       </div>
     </div>
+  </footer>
 
-    <!-- Navigation -->
-    <nav class="footer-nav">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="Le_festival.html">Le Festival</a></li>
-        <li><a href="Le_programme.html">Programme</a></li>
-        <li><a href="Les_artistes.html">Artistes</a></li>
-        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
-      </ul>
-    </nav>
-
-    <!-- Contact -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <ul>
-        <li>
-          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
-          Montbéliard 25200
-        </li>
-        <li>
-          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
-          contact@lafanfarecomtoise.fr
-        </li>
-        <li>
-          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
-          03 81 XX XX XX
-        </li>
-      </ul>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-social">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="erreur.html" aria-label="Facebook">
-          <img src="assets/Icones/Link.svg" alt="Facebook">
-        </a>
-        <a href="erreur.html" aria-label="Instagram">
-          <img src="assets/Icones/insta.svg" alt="Instagram">
-        </a>
-        <a href="erreur.html" aria-label="Twitter">
-            <img src="assets/Icones/twitter.svg" alt="Twitter">
-        </a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="src/js/main.js"></script>
-<script src="src/js/carousel.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/carousel.js"></script>
 </body>
 </html>

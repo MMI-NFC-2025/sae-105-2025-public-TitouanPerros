@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page non trouvée - Fanfare Comtoise</title>
+  <meta name="description" content="La page que vous recherchez est introuvable. Retournez à l'accueil du festival La Fanfare Comtoise">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header class="header">
-    <a href="index.html">
-      <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -20,23 +21,23 @@
   </header>
 
   <!-- NAVIGATION MOBILE -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-label="Aller à la page d'accueil">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-label="Découvrir le festival">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-label="Voir les artistes">Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-label="Découvrir les scènes">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
   </nav>
 
   <!-- CONTENU 404 -->
-  <main class="error-404">
+  <main class="error-404" role="main">
     <div class="error-container">
       <!-- Animation musicale -->
-      <div class="error-animation">
+      <div class="error-animation" aria-hidden="true">
         <div class="music-notes">
           <span class="note note-1">♪</span>
           <span class="note note-2">♫</span>
@@ -57,37 +58,37 @@
         </p>
 
         <!-- Suggestions de navigation -->
-        <div class="error-suggestions">
-          <h2>Où souhaitez-vous aller ?</h2>
-          <div class="suggestions-grid">
-            <a href="index.html" class="suggestion-card">
-              <div class="suggestion-icon">🏠</div>
+        <section class="error-suggestions" aria-labelledby="suggestions-title">
+          <h2 id="suggestions-title">Où souhaitez-vous aller ?</h2>
+          <div class="suggestions-grid" role="list">
+            <a href="index.html" class="suggestion-card" role="listitem" aria-label="Retourner à la page d'accueil">
+              <div class="suggestion-icon" aria-hidden="true">🏠</div>
               <h3>Accueil</h3>
               <p>Retour à la page d'accueil</p>
             </a>
 
-            <a href="Le_programme.html" class="suggestion-card">
-              <div class="suggestion-icon">📅</div>
+            <a href="Le_programme.html" class="suggestion-card" role="listitem" aria-label="Consulter le programme des concerts">
+              <div class="suggestion-icon" aria-hidden="true">📅</div>
               <h3>Programme</h3>
               <p>Découvrez les concerts</p>
             </a>
 
-            <a href="Les_artistes.html" class="suggestion-card">
-              <div class="suggestion-icon">🎤</div>
+            <a href="Les_artistes.html" class="suggestion-card" role="listitem" aria-label="Découvrir les artistes du festival">
+              <div class="suggestion-icon" aria-hidden="true">🎤</div>
               <h3>Artistes</h3>
               <p>Rencontrez les artistes</p>
             </a>
 
-            <a href="Infos_pratiques.html" class="suggestion-card">
-              <div class="suggestion-icon">ℹ️</div>
+            <a href="Infos_pratiques.html" class="suggestion-card" role="listitem" aria-label="Consulter les informations pratiques, billets et accès">
+              <div class="suggestion-icon" aria-hidden="true">ℹ️</div>
               <h3>Infos Pratiques</h3>
               <p>Billets et accès</p>
             </a>
           </div>
-        </div>
+        </section>
 
         <!-- Bouton principal -->
-        <a href="index.html" class="btn-home">
+        <a href="index.html" class="btn-home" aria-label="Retourner à la page d'accueil du festival">
           🎵 Retour à l'accueil
         </a>
       </div>
@@ -95,14 +96,14 @@
   </main>
 
   <!-- FOOTER SIMPLIFIÉ -->
-  <footer id="footer-404">
+  <footer id="footer-404" role="contentinfo" aria-label="Informations et liens rapides">
     <div class="footer-container">
       <p>© 2025 La Fanfare Comtoise Montbéliard</p>
-      <div class="footer-links">
-        <a href="Contact.html">Contact</a>
-        <a href="Le_festival.html">Le Festival</a>
-        <a href="Infos_pratiques.html">Infos Pratiques</a>
-      </div>
+      <nav class="footer-links" aria-label="Navigation secondaire">
+        <a href="Contact.html" aria-label="Nous contacter">Contact</a>
+        <a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a>
+        <a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos Pratiques</a>
+      </nav>
     </div>
   </footer>
 

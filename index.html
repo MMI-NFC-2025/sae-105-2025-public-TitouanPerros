@@ -1,87 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Housemood</title>
+    <title>La Fanfare Comtoise - Festival de Musique de Rue à Montbéliard</title>
+    <meta name="description" content="Festival écoresponsable de musique de rue et fanfare à Montbéliard du 20 au 22 juin 2025">
     <link rel="stylesheet" href="src/css/style.css"/>
   </head>
 
 <body>
 
 <header class="header">
-    <a href="index.html">
-    <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
     <div class="search-container">
-    <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher">
-    <button class="search-btn" aria-label="Rechercher">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
-      </svg>
-    </button>
-  </div>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
     </button>
 </header>
 
-<nav class="mobile-nav">
+<nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-current="page" aria-label="Accueil (page actuelle)">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-label="Découvrir le festival">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-label="Voir les artistes">Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-label="Découvrir les scènes">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
 </nav>
 
-<section id="hero">
+<section id="hero" aria-labelledby="hero-title">
   <!-- Image de fond -->
   <div class="hero-background">
-    <img src="assets/images/container6.avif" alt="Photo du festival La Fanfare Comtoise">
+    <img src="assets/images/container6.avif" alt="Ambiance festive du festival La Fanfare Comtoise avec musiciens et foule enthousiaste" loading="eager">
   </div>
 
   <!-- Contenu du hero -->
   <div class="hero-content1">
-    <h1>La Fanfare Comtoise</h1>
+    <h1 id="hero-title">La Fanfare Comtoise</h1>
     <p class="hero-subtitle1">Musique de Rue &amp; Fanfare</p>
     <p class="hero-intro">
       Un festival écoresponsable au cœur de Montbéliard
     </p>
 
     <!-- Blocs d'infos (date / lieu / écoresponsable) -->
-    <ul class="hero-infos">
+    <ul class="hero-infos" role="list" aria-label="Informations principales du festival">
       <li class="hero-info-item">
-        <span class="hero-info-icon">
-          <img src="assets/icones/Calendrier.svg" alt="logo calendrier">
+        <span class="hero-info-icon" aria-hidden="true">
+          <img src="assets/icones/Calendrier.svg" alt="">
         </span>
-        <span class="hero-info-text">20 - 22 Juin 2025</span>
+        <span class="hero-info-text" aria-label="Dates du festival">20 - 22 Juin 2025</span>
       </li>
 
       <li class="hero-info-item">
-        <span class="hero-info-icon">
-          <img src="assets/icones/maps.svg" alt="Localisation">
+        <span class="hero-info-icon" aria-hidden="true">
+          <img src="assets/icones/maps.svg" alt="">
         </span>
-        <span class="hero-info-text">Montbéliard</span>
+        <span class="hero-info-text" aria-label="Lieu du festival">Montbéliard</span>
       </li>
 
       <li class="hero-info-item">
-        <span class="hero-info-icon">
+        <span class="hero-info-icon" aria-hidden="true">
           <img src="assets/icones/feuilles.svg" alt="">
         </span>
-        <span class="hero-info-text">Écoresponsable</span>
+        <span class="hero-info-text" aria-label="Engagement écologique">Écoresponsable</span>
       </li>
     </ul>
 
     <!-- Bouton -->
-    <a href="erreur.html" class="hero-button">
-      <span class="hero-button-icon">
+    <a href="erreur.html" class="hero-button" aria-label="Réserver vos billets pour le festival">
+      <span class="hero-button-icon" aria-hidden="true">
         <img src="assets/icones/Billet.svg" alt="">
       </span>
       <span class="hero-button-text">Réserver vos billets</span>
@@ -90,30 +91,30 @@
 </section>
 
 <!-- DATES CLÉS -->
-<section id="dates-cles">
+<section id="dates-cles" aria-labelledby="dates-title">
   <header>
-    <h2>Dates Clés</h2>
+    <h2 id="dates-title">Dates Clés</h2>
     <p>Trois jours de célébration musicale dans les rues de Montbéliard</p>
   </header>
 
   <div class="dates-list">
-    <article class="date-card">
-      <h3>Vendredi</h3>
-      <p class="date-number">20</p>
+    <article class="date-card" aria-labelledby="date1-title">
+      <h3 id="date1-title">Vendredi</h3>
+      <p class="date-number" aria-label="20 juin">20</p>
       <p class="date-month">Juin 2025</p>
       <p class="date-description">Ouverture du festival avec 3 artistes</p>
     </article>
 
-    <article class="date-card date-card--highlight">
-      <h3>Samedi</h3>
-      <p class="date-number">21</p>
+    <article class="date-card date-card--highlight" aria-labelledby="date2-title" aria-describedby="date2-desc">
+      <h3 id="date2-title">Samedi</h3>
+      <p class="date-number" aria-label="21 juin">21</p>
       <p class="date-month">Juin 2025</p>
-      <p class="date-description">Grande journée avec 4 concerts</p>
+      <p class="date-description" id="date2-desc">Grande journée avec 4 concerts</p>
     </article>
 
-    <article class="date-card">
-      <h3>Dimanche</h3>
-      <p class="date-number">22</p>
+    <article class="date-card" aria-labelledby="date3-title">
+      <h3 id="date3-title">Dimanche</h3>
+      <p class="date-number" aria-label="22 juin">22</p>
       <p class="date-month">Juin 2025</p>
       <p class="date-description">Clôture festive</p>
     </article>
@@ -121,85 +122,84 @@
 </section>
 
 <!-- DÉCOUVREZ LE FESTIVAL -->
-<section id="decouvrez-festival">
+<section id="decouvrez-festival" aria-labelledby="decouvrez-title">
   <header>
-    <h2>Découvrez le Festival</h2>
+    <h2 id="decouvrez-title">Découvrez le Festival</h2>
   </header>
 
-  <div class="festival-cards">
-    <a href="Le_programme.html "style="text-decoration: none; color: inherit;">
-    <article class="festival-card">
-      <img src="assets/Icones/bouton musique.svg" alt="bouton musique">
-      <h3>Programme</h3>
-      <p>Programme complet</p>
-    </article>
+  <div class="festival-cards" role="list">
+    <a href="Le_programme.html" class="festival-card-link" aria-label="Consulter le programme complet du festival">
+      <article class="festival-card" role="listitem">
+        <img src="assets/Icones/bouton musique.svg" alt="" aria-hidden="true">
+        <h3>Programme</h3>
+        <p>Programme complet</p>
+      </article>
     </a>
     
-    <a href="Les_artistes.html" style="text-decoration: none; color: inherit;">
-    <article class="festival-card">
-      <img src="assets/Icones/bouton personnes.svg" alt="bouton personnes">
-      <h3>Artistes</h3>
-      <p>Tous les artistes</p>
-    </article>
+    <a href="Les_artistes.html" class="festival-card-link" aria-label="Découvrir tous les artistes du festival">
+      <article class="festival-card" role="listitem">
+        <img src="assets/Icones/bouton personnes.svg" alt="" aria-hidden="true">
+        <h3>Artistes</h3>
+        <p>Tous les artistes</p>
+      </article>
     </a>
     
-    <a href="Les_scènes.html" style="text-decoration: none; color: inherit;">
-    <article class="festival-card">
-      <img src="assets/Icones/bouton localisation.svg" alt="bouton localisation">
-      <h3>Scènes</h3>
-      <p>Les scènes</p>
-    </article>
+    <a href="Les_scènes.html" class="festival-card-link" aria-label="Découvrir les différentes scènes du festival">
+      <article class="festival-card" role="listitem">
+        <img src="assets/Icones/bouton localisation.svg" alt="" aria-hidden="true">
+        <h3>Scènes</h3>
+        <p>Les scènes</p>
+      </article>
     </a>
     
-    <a href="Infos_pratiques.html" style="text-decoration: none; color: inherit;">
-    <article class="festival-card">
-      <img src="assets/Icones/bouton calendrier.svg" alt="bouton calendrier">
-      <h3>Infos Pratiques</h3>
-      <p>Tarifs &amp; accès</p>
-    </article>
+    <a href="Infos_pratiques.html" class="festival-card-link" aria-label="Consulter les informations pratiques, tarifs et accès">
+      <article class="festival-card" role="listitem">
+        <img src="assets/Icones/bouton calendrier.svg" alt="" aria-hidden="true">
+        <h3>Infos Pratiques</h3>
+        <p>Tarifs &amp; accès</p>
+      </article>
     </a>
-
   </div>
 </section>
 
 <!-- UN FESTIVAL ÉCORESPONSABLE AVEC CAROUSEL -->
-<section id="festival-ecoresponsable">
+<section id="festival-ecoresponsable" aria-labelledby="eco-title">
   <header>
-    <h2>Un Festival Écoresponsable</h2>
+    <h2 id="eco-title">Un Festival Écoresponsable</h2>
   </header>
 
   <div class="eco-content">
     <!-- CAROUSEL INTÉGRÉ -->
-    <div class="carousel-container">
+    <div class="carousel-container" role="region" aria-label="Carrousel d'images du festival écoresponsable" aria-roledescription="carrousel">
       <div class="carousel-wrapper" id="carouselWrapper">
         <!-- Slide 1 -->
-        <div class="carousel-slide">
-          <img src="assets/images/container7.avif" alt="Festival écoresponsable - Voiture décorée" lazy="loading">
+        <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="1 sur 4">
+          <img src="assets/images/container7.avif" alt="Voiture colorée décorée aux couleurs du festival avec guirlandes festives" loading="lazy">
         </div>
         
         <!-- Slide 2 -->
-        <div class="carousel-slide">
-          <img src="assets/images/container4.avif" alt="Festival écoresponsable - Énergie verte">
+        <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 4">
+          <img src="assets/images/container4.avif" alt="Scène du festival alimentée par des énergies renouvelables" loading="lazy">
         </div>
         
         <!-- Slide 3 -->
-        <div class="carousel-slide">
-          <img src="assets/images/container2.avif" alt="Festival écoresponsable - Mobilité douce">
+        <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 4">
+          <img src="assets/images/container2.avif" alt="Festivaliers utilisant des moyens de transport doux et mobilité douce" loading="lazy">
         </div>
 
         <!-- Slide 4 -->
-        <div class="carousel-slide">
-          <img src="assets/images/container3.avif" alt="Festival écoresponsable - Tri sélectif">
+        <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="4 sur 4">
+          <img src="assets/images/container3.avif" alt="Dispositifs de tri sélectif et compostage sur le site du festival" loading="lazy">
         </div>
       </div>
 
       <!-- Boutons de navigation -->
-      <button class="carousel-btn carousel-btn-prev" aria-label="Slide précédente"></button>
-      <button class="carousel-btn carousel-btn-next" aria-label="Slide suivante"></button>
+      <button class="carousel-btn carousel-btn-prev" aria-label="Voir la diapositive précédente"></button>
+      <button class="carousel-btn carousel-btn-next" aria-label="Voir la diapositive suivante"></button>
     </div>
 
     <!-- Indicateurs -->
-    <div class="carousel-indicators" id="carouselIndicators"></div>
+    <div class="carousel-indicators" id="carouselIndicators" role="tablist" aria-label="Sélectionner une diapositive"></div>
 
     <div class="eco-text">
       <p>
@@ -208,23 +208,23 @@
         aux producteurs locaux.
       </p>
 
-      <ul class="eco-list">
+      <ul class="eco-list" role="list">
         <li>
-          <img src="assets/icones/bouton feuille.svg" alt="Énergie" class="eco-icon">
+          <img src="assets/icones/bouton feuille.svg" alt="" class="eco-icon" aria-hidden="true">
           <div class="eco-text-content">
             <h3>Énergie 100% renouvelable</h3>
             <p>Toutes nos scènes sont alimentées par des sources d'énergie verte.</p>
           </div>
         </li>
         <li>
-          <img src="assets/icones/bouton feuille.svg" alt="Zéro déchet" class="eco-icon">
+          <img src="assets/icones/bouton feuille.svg" alt="" class="eco-icon" aria-hidden="true">
           <div class="eco-text-content">
             <h3>Zéro déchet plastique</h3>
             <p>Gobelets et contenants réutilisables ou compostables.</p>
           </div>
         </li>
         <li>
-          <img src="assets/icones/bouton feuille.svg" alt="Mobilité" class="eco-icon">
+          <img src="assets/icones/bouton feuille.svg" alt="" class="eco-icon" aria-hidden="true">
           <div class="eco-text-content">
             <h3>Mobilité douce encouragée</h3>
             <p>Parkings vélo, navettes gratuites et covoiturage.</p>
@@ -236,19 +236,22 @@
 </section>
 
 <!-- NOS PARTENAIRES -->
-<section id="partenaires">
+<section id="partenaires" aria-labelledby="partenaires-title">
   <header>
-    <h2>Nos Partenaires</h2>
+    <h2 id="partenaires-title">Nos Partenaires</h2>
   </header>
+  <div role="list" aria-label="Liste des partenaires du festival">
+    <p aria-live="polite">Logos des partenaires à venir prochainement</p>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer id="footer">
+<footer id="footer" role="contentinfo" aria-label="Informations de contact et navigation secondaire">
   <div class="footer-container">
     <!-- En-tête du footer -->
     <div class="footer-header">
       <div class="footer-logo">
-        <img src="assets/Icones/Logo fanfare.svg" alt="Logo Festival des Rues">
+        <img src="assets/Icones/Logo fanfare.svg" alt="Logo du Festival des Rues" loading="lazy">
       </div>
       <div class="footer-intro">
         <h3>Festival des Rues</h3>
@@ -260,13 +263,13 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="footer-nav">
+    <nav class="footer-nav" aria-label="Navigation secondaire du pied de page">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="Le_festival.html">Le Festival</a></li>
-        <li><a href="Le_programme.html">Programme</a></li>
-        <li><a href="Les_artistes.html">Artistes</a></li>
-        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
+        <li><a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a></li>
+        <li><a href="Le_programme.html" aria-label="Consulter le programme complet">Programme</a></li>
+        <li><a href="Les_artistes.html" aria-label="Découvrir les artistes">Artistes</a></li>
+        <li><a href="Infos_pratiques.html" aria-label="Obtenir des informations pratiques">Infos Pratiques</a></li>
       </ul>
     </nav>
 
@@ -275,16 +278,16 @@
       <h4>Contact</h4>
       <ul>
         <li>
-          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
-          Montbéliard 25200
+          <img src="assets/Icones/Localisation.svg" alt="" width="16" height="16" aria-hidden="true">
+          <span aria-label="Adresse">Montbéliard 25200</span>
         </li>
         <li>
-          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
-          contact@lafanfarecomtoise.fr
+          <img src="assets/Icones/lettre.svg" alt="" width="16" height="16" aria-hidden="true">
+          <a href="mailto:contact@lafanfarecomtoise.fr" aria-label="Nous envoyer un email">contact@lafanfarecomtoise.fr</a>
         </li>
         <li>
-          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
-          03 81 XX XX XX
+          <img src="assets/Icones/Telephone.svg" alt="" width="16" height="16" aria-hidden="true">
+          <a href="tel:+33381000000" aria-label="Nous appeler au 03 81 XX XX XX">03 81 XX XX XX</a>
         </li>
       </ul>
     </div>
@@ -292,15 +295,15 @@
     <!-- Réseaux sociaux -->
     <div class="footer-social">
       <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="erreur.html" aria-label="Facebook">
-          <img src="assets/Icones/Link.svg" alt="Facebook">
+      <div class="social-links" role="list" aria-label="Liens vers nos réseaux sociaux">
+        <a href="erreur.html" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+          <img src="assets/Icones/Link.svg" alt="Icône Facebook">
         </a>
-        <a href="erreur.html" aria-label="Instagram">
-          <img src="assets/Icones/insta.svg" alt="Instagram">
+        <a href="erreur.html" aria-label="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+          <img src="assets/Icones/insta.svg" alt="Icône Instagram">
         </a>
-        <a href="erreur.html" aria-label="Twitter">
-            <img src="assets/Icones/twitter.svg" alt="Twitter">
+        <a href="erreur.html" aria-label="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+          <img src="assets/Icones/twitter.svg" alt="Icône Twitter">
         </a>
       </div>
     </div>

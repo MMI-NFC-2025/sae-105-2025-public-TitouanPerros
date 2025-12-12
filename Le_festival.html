@@ -10,19 +10,19 @@
 <body>
  <!-- HEADER -->
   <header class="header">
-    <a href="index.html">
-    <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
+    <a href="index.html" aria-label="Retour à l'accueil">
+      <img src="assets/Icones/Logo fanfare.svg" alt="Logo La Fanfare Comtoise">
     </a>
     <div class="search-container">
-    <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher">
-    <button class="search-btn" aria-label="Rechercher">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
-      </svg>
-    </button>
-  </div>
-    <button class="burger-btn" aria-label="Ouvrir le menu">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans le site">
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -30,33 +30,33 @@
   </header>
 
   <!-- NAVIGATION MOBILE -->
-  <nav class="mobile-nav">
+  <nav class="mobile-nav" aria-label="Navigation principale">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="Le_festival.html">Le festival</a></li>
-      <li><a href="Le_programme.html">Programme</a></li>
-      <li><a href="Les_artistes.html">Artistes</a></li>
-      <li><a href="Les_scènes.html">Scènes</a></li>
-      <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="index.html" aria-label="Aller à la page d'accueil">Accueil</a></li>
+      <li><a href="Le_festival.html" aria-current="page" aria-label="Le festival (page actuelle)">Le festival</a></li>
+      <li><a href="Le_programme.html" aria-label="Consulter le programme">Programme</a></li>
+      <li><a href="Les_artistes.html" aria-label="Voir les artistes">Artistes</a></li>
+      <li><a href="Les_scènes.html" aria-label="Découvrir les scènes">Scènes</a></li>
+      <li><a href="Infos_pratiques.html" aria-label="Consulter les informations pratiques">Infos pratiques</a></li>
+      <li><a href="Contact.html" aria-label="Nous contacter">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO SECTION -->
-  <section id="hero-festival">
+  <section id="hero-festival" aria-labelledby="hero-title">
     <div class="hero-content">
-      <h1>Le Festival</h1>
+      <h1 id="hero-title">Le Festival</h1>
       <p class="hero-subtitle">Un Événement Écoresponsable au cœur de Montbéliard</p>
     </div>
     <div class="hero-image">
-      <img src="assets/images/container6.avif" alt="Ambiance du festival">
+      <img src="assets/images/container6.avif" alt="Ambiance festive du festival avec la foule enthousiaste et les musiciens sur scène" loading="lazy">
     </div>
   </section>
 
   <!-- NOTRE HISTOIRE -->
-  <section id="notre-histoire">
+  <section id="notre-histoire" aria-labelledby="histoire-title">
     <div class="section-container">
-      <h2>Notre Histoire</h2>
+      <h2 id="histoire-title">Notre Histoire</h2>
       <div class="histoire-content">
         <p>
           Créé en 2015, la Fanfare Comtoise de Montbéliard est né de la volonté d'un groupe de passionnés de musique et de culture locale. L'objectif : défendre la musique de rue et les fanfares tout en préservant notre environnement.
@@ -69,46 +69,46 @@
   </section>
 
   <!-- NOS VALEURS -->
-  <section id="nos-valeurs">
+  <section id="nos-valeurs" aria-labelledby="valeurs-title">
     <div class="section-container">
-      <h2>Nos Valeurs</h2>
+      <h2 id="valeurs-title">Nos Valeurs</h2>
       <div class="valeurs-grid">
-        <article class="valeur-card">
-          <div class="valeur-icon">
-            <img src="assets/Icones/bouton musique.svg" alt="Culture Accessible">
+        <article class="valeur-card" aria-labelledby="valeur1-title">
+          <div class="valeur-icon" aria-hidden="true">
+            <img src="assets/Icones/bouton musique.svg" alt="">
           </div>
           <div class="valeur-content">
-            <h3>Culture Accessible</h3>
+            <h3 id="valeur1-title">Culture Accessible</h3>
             <p>Rendre la culture accessible à tous avec des concerts gratuits dans l'espace public</p>
           </div>
         </article>
 
-        <article class="valeur-card">
-          <div class="valeur-icon">
-            <img src="assets/Icones/bouton feuille.svg" alt="Écoresponsable">
+        <article class="valeur-card" aria-labelledby="valeur2-title">
+          <div class="valeur-icon" aria-hidden="true">
+            <img src="assets/Icones/bouton feuille.svg" alt="">
           </div>
           <div class="valeur-content">
-            <h3>Écoresponsable</h3>
+            <h3 id="valeur2-title">Écoresponsable</h3>
             <p>Minimiser notre impact environnemental avec des pratiques durables et responsables</p>
           </div>
         </article>
 
-        <article class="valeur-card">
-          <div class="valeur-icon">
-            <img src="assets/Icones/bouton personnes.svg" alt="Partage & Convivialité">
+        <article class="valeur-card" aria-labelledby="valeur3-title">
+          <div class="valeur-icon" aria-hidden="true">
+            <img src="assets/Icones/bouton personnes.svg" alt="">
           </div>
           <div class="valeur-content">
-            <h3>Partage & Convivialité</h3>
+            <h3 id="valeur3-title">Partage & Convivialité</h3>
             <p>Créer du lien social et favoriser les échanges entre artistes et spectateurs</p>
           </div>
         </article>
 
-        <article class="valeur-card">
-          <div class="valeur-icon">
-            <img src="assets/Icones/bouton coeur.svg" alt="Local & Solidaire">
+        <article class="valeur-card" aria-labelledby="valeur4-title">
+          <div class="valeur-icon" aria-hidden="true">
+            <img src="assets/Icones/bouton coeur.svg" alt="">
           </div>
           <div class="valeur-content">
-            <h3>Local & Solidaire</h3>
+            <h3 id="valeur4-title">Local & Solidaire</h3>
             <p>Soutenir les artistes locaux et les circuits courts avec nos partenaires régionaux</p>
           </div>
         </article>
@@ -117,70 +117,70 @@
   </section>
 
   <!-- L'ÉQUIPE -->
-  <section id="equipe">
+  <section id="equipe" aria-labelledby="equipe-title">
     <div class="section-container">
-      <h2>L'Équipe</h2>
+      <h2 id="equipe-title">L'Équipe</h2>
       <div class="equipe-list">
         <article class="membre-card">
           <h3>Marc Dubois</h3>
-          <p class="membre-role">Directeur du festival</p>
+          <p class="membre-role" aria-label="Fonction">Directeur du festival</p>
         </article>
 
         <article class="membre-card">
           <h3>Jean Martin</h3>
-          <p class="membre-role">Responsable programmation</p>
+          <p class="membre-role" aria-label="Fonction">Responsable programmation</p>
         </article>
 
         <article class="membre-card">
           <h3>Sophie Laurent</h3>
-          <p class="membre-role">Coordinatrice logistique</p>
+          <p class="membre-role" aria-label="Fonction">Coordinatrice logistique</p>
         </article>
 
         <article class="membre-card">
           <h3>Pierre Durand</h3>
-          <p class="membre-role">Responsable technique</p>
+          <p class="membre-role" aria-label="Fonction">Responsable technique</p>
         </article>
 
         <article class="membre-card">
           <h3>Émilie Rousseau</h3>
-          <p class="membre-role">Chargée de communication</p>
+          <p class="membre-role" aria-label="Fonction">Chargée de communication</p>
         </article>
 
         <article class="membre-card">
           <h3>Thomas Bernard</h3>
-          <p class="membre-role">Responsable écoresponsabilité</p>
+          <p class="membre-role" aria-label="Fonction">Responsable écoresponsabilité</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- CHARTE ÉCORESPONSABLE -->
-  <section id="charte-eco">
+  <section id="charte-eco" aria-labelledby="charte-title">
     <div class="section-container">
-      <h2>Charte Écoresponsable</h2>
-      <ul class="charte-list">
+      <h2 id="charte-title">Charte Écoresponsable</h2>
+      <ul class="charte-list" role="list">
         <li>
-          <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Utilisation d'énergies 100% renouvelables pour alimenter toutes les scènes</p>
         </li>
         <li>
-          <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Gobelets et vaisselle 100% réutilisables ou compostables</p>
         </li>
         <li>
-          <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Tri sélectif et compostage sur l'ensemble du site</p>
         </li>
         <li>
-          <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Encouragement des transports doux : vélos, navettes, covoiturage</p>
         </li>
         <li>
-            <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Restauration locale et biologique privilégiée</p>
         </li>
         <li>
-            <img src="assets/Icones/bouton flèche.svg" alt="Énergie renouvelable" class="eco-icon">
+          <img src="assets/Icones/bouton flèche.svg" alt="" class="eco-icon" aria-hidden="true">
           <p>Sensibilisation du public aux enjeux environnementaux</p>
         </li>
       </ul>
@@ -188,84 +188,86 @@
   </section>
 
   <!-- NOS PARTENAIRES -->
-  <section id="partenaires">
+  <section id="partenaires" aria-labelledby="partenaires-title">
     <div class="section-container">
-      <h2>Nos Partenaires</h2>
-      <div class="partners-logos">
+      <h2 id="partenaires-title">Nos Partenaires</h2>
+      <div class="partners-logos" role="list" aria-label="Liste des partenaires du festival">
         <!-- Logos partenaires à ajouter -->
+        <p aria-live="polite">Logos des partenaires à venir prochainement</p>
       </div>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo" aria-label="Informations de contact et navigation secondaire">
+    <div class="footer-container">
+      <!-- En-tête du footer -->
+      <div class="footer-header">
+        <div class="footer-logo">
+          <img src="assets/Icones/Logo fanfare.svg" alt="Logo du Festival des Rues" loading="lazy">
+        </div>
+        <div class="footer-intro">
+          <h3>Festival des Rues</h3>
+          <p class="footer-location">Montbéliard</p>
+          <p class="footer-description">
+            Le festival de musique de rue et fanfare écoresponsable de Montbéliard
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="footer-nav" aria-label="Navigation secondaire du pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="Le_festival.html" aria-label="En savoir plus sur le festival">Le Festival</a></li>
+          <li><a href="Le_programme.html" aria-label="Consulter le programme complet">Programme</a></li>
+          <li><a href="Les_artistes.html" aria-label="Découvrir les artistes">Artistes</a></li>
+          <li><a href="Infos_pratiques.html" aria-label="Obtenir des informations pratiques">Infos Pratiques</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <img src="assets/Icones/Localisation.svg" alt="" width="16" height="16" aria-hidden="true">
+            <span aria-label="Adresse">Montbéliard 25200</span>
+          </li>
+          <li>
+            <img src="assets/Icones/lettre.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="mailto:contact@lafanfarecomtoise.fr" aria-label="Nous envoyer un email">contact@lafanfarecomtoise.fr</a>
+          </li>
+          <li>
+            <img src="assets/Icones/Telephone.svg" alt="" width="16" height="16" aria-hidden="true">
+            <a href="tel:+33381000000" aria-label="Nous appeler au 03 81 XX XX XX">03 81 XX XX XX</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="footer-social">
+        <h4>Suivez-nous</h4>
+        <div class="social-links" role="list" aria-label="Liens vers nos réseaux sociaux">
+          <a href="erreur.html" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/Link.svg" alt="Icône Facebook">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Instagram (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/insta.svg" alt="Icône Instagram">
+          </a>
+          <a href="erreur.html" aria-label="Suivez-nous sur Twitter (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">
+            <img src="assets/Icones/twitter.svg" alt="Icône Twitter">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="src/js/main.js"></script>
 </body>
-
- <!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-container">
-    <!-- En-tête du footer -->
-    <div class="footer-header">
-      <div class="footer-logo">
-        <img src="assets/Icones/Logo fanfare.svg" alt="Logo Festival des Rues">
-      </div>
-      <div class="footer-intro">
-        <h3>Festival des Rues</h3>
-        <p class="footer-location">Montbéliard</p>
-        <p class="footer-description">
-          Le festival de musique de rue et fanfare écoresponsable de Montbéliard
-        </p>
-      </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="footer-nav">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="Le_festival.html">Le Festival</a></li>
-        <li><a href="Le_programme.html">Programme</a></li>
-        <li><a href="Les_artistes.html">Artistes</a></li>
-        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
-      </ul>
-    </nav>
-
-    <!-- Contact -->
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <ul>
-        <li>
-          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
-          Montbéliard 25200
-        </li>
-        <li>
-          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
-          contact@lafanfarecomtoise.fr
-        </li>
-        <li>
-          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
-          03 81 XX XX XX
-        </li>
-      </ul>
-    </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-social">
-      <h4>Suivez-nous</h4>
-      <div class="social-links">
-        <a href="erreur.html" aria-label="Facebook">
-          <img src="assets/Icones/Link.svg" alt="Facebook">
-        </a>
-        <a href="erreur.html" aria-label="Instagram">
-          <img src="assets/Icones/insta.svg" alt="Instagram">
-        </a>
-        <a href="erreur.html" aria-label="Twitter">
-            <img src="assets/Icones/twitter.svg" alt="Twitter">
-        </a>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© 2025 La Fanfare Comtoise Montbéliard. Festival écoresponsable.</p>
-    </div>
-  </div>
-</footer>
 </html>
