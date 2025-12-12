@@ -315,30 +315,3 @@ section h2 {
   border-top: 1px solid #f0f0f0;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  .billet-header {
-    align-items: center;
-  }
-
-  .hebergement-card,
-  .transport-card {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #billetterie .section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .billet-card {
-    margin-bottom: 0;
-  }
-
-  .billet-card.gratuit {
-    grid-column: 1 / -1;
-  }
-}

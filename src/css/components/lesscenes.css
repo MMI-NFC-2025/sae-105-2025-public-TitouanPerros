@@ -197,21 +197,3 @@
   margin: 0;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  #scenes .section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .scene-image {
-    height: 240px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #scenes .section-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}

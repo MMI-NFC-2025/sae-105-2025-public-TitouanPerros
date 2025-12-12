@@ -224,36 +224,3 @@
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  .error-code {
-    font-size: 12rem;
-  }
-
-  .note {
-    font-size: 3.5rem;
-  }
-
-  .error-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .error-message {
-    font-size: 1.15rem;
-  }
-
-  .suggestions-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .error-code {
-    font-size: 14rem;
-  }
-
-  .error-content h1 {
-    font-size: 3rem;
-  }
-}

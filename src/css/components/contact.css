@@ -258,28 +258,3 @@ section h2 {
   margin: 0;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  #contact-info .section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .contact-card {
-    margin-bottom: 0;
-  }
-
-  .social-cards {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  #contact-info .section-container {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 900px;
-    margin: 0 auto;
-  }
-}

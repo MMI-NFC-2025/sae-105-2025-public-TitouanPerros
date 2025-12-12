@@ -186,26 +186,3 @@
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  #filtres .section-container {
-    flex-direction: row;
-    gap: 1.5rem;
-  }
-
-  .filtre-group {
-    flex: 1;
-  }
-
-  #concerts .section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  #concerts .section-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}

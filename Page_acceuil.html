@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/css/style.css"/>
   </head>
 
+<body>
+
 <header class="header">
     <img src="assets/Icones/Logo fanfare.svg" alt="La Fanfare Comtoise">
     <button class="burger-btn" aria-label="Ouvrir le menu">
@@ -26,8 +28,8 @@
       <li><a href="Infos_pratiques.html">Infos pratiques</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
-  </nav>
-<body>
+</nav>
+
 <section id="hero">
   <!-- Image de fond -->
   <div class="hero-background">
@@ -42,11 +44,10 @@
       Un festival écoresponsable au cœur de Montbéliard
     </p>
 
-    <!-- Blocs d’infos (date / lieu / écoresponsable) -->
+    <!-- Blocs d'infos (date / lieu / écoresponsable) -->
     <ul class="hero-infos">
       <li class="hero-info-item">
         <span class="hero-info-icon">
-          <!-- Icône calendrier -->
           <img src="assets/icones/Calendrier.svg" alt="logo calendrier">
         </span>
         <span class="hero-info-text">20 - 22 Juin 2025</span>
@@ -54,7 +55,6 @@
 
       <li class="hero-info-item">
         <span class="hero-info-icon">
-          <!-- Icône localisation -->
           <img src="assets/icones/maps.svg" alt="Localisation">
         </span>
         <span class="hero-info-text">Montbéliard</span>
@@ -62,7 +62,6 @@
 
       <li class="hero-info-item">
         <span class="hero-info-icon">
-          <!-- Icône feuille -->
           <img src="assets/icones/feuilles.svg" alt="">
         </span>
         <span class="hero-info-text">Écoresponsable</span>
@@ -72,7 +71,6 @@
     <!-- Bouton -->
     <a href="billetterie" class="hero-button">
       <span class="hero-button-icon">
-        <!-- Icône ticket -->
         <img src="assets/icones/Billet.svg" alt="">
       </span>
       <span class="hero-button-text">Réserver vos billets</span>
@@ -119,74 +117,100 @@
 
   <div class="festival-cards">
     <article class="festival-card">
-    <img src="assets/Icones/bouton musique.svg"
-         alt="bouton musique">
+      <img src="assets/Icones/bouton musique.svg" alt="bouton musique">
       <h3>Programme</h3>
       <p>Programme complet</p>
     </article>
 
     <article class="festival-card">
-        <img src="assets/Icones/bouton personnes.svg" alt="bouton personnes">
+      <img src="assets/Icones/bouton personnes.svg" alt="bouton personnes">
       <h3>Artistes</h3>
       <p>Tous les artistes</p>
     </article>
 
     <article class="festival-card">
-        <img src="assets/Icones/bouton localisation.svg" alt="bouton localisation">
+      <img src="assets/Icones/bouton localisation.svg" alt="bouton localisation">
       <h3>Scènes</h3>
       <p>Les scènes</p>
     </article>
 
     <article class="festival-card">
-        <img src="assets/Icones/bouton calendrier.svg" alt="bouton calendrier">
+      <img src="assets/Icones/bouton calendrier.svg" alt="bouton calendrier">
       <h3>Infos Pratiques</h3>
       <p>Tarifs &amp; accès</p>
     </article>
   </div>
 </section>
 
-<!-- UN FESTIVAL ÉCORESPONSABLE -->
+<!-- UN FESTIVAL ÉCORESPONSABLE AVEC CAROUSEL -->
 <section id="festival-ecoresponsable">
   <header>
     <h2>Un Festival Écoresponsable</h2>
   </header>
 
   <div class="eco-content">
-    <div class="eco-image">
-      <img src="assets/images/container5.avif"
-           alt="Voiture et décoration du festival écoresponsable">
+    <!-- CAROUSEL INTÉGRÉ -->
+    <div class="carousel-container">
+      <div class="carousel-wrapper" id="carouselWrapper">
+        <!-- Slide 1 -->
+        <div class="carousel-slide">
+          <img src="assets/images/container5.avif" alt="Festival écoresponsable - Voiture décorée">
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <img src="assets/images/container6.avif" alt="Festival écoresponsable - Énergie verte">
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <img src="assets/images/container2.avif" alt="Festival écoresponsable - Mobilité douce">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-slide">
+          <img src="assets/images/container3.avif" alt="Festival écoresponsable - Tri sélectif">
+        </div>
+      </div>
+
+      <!-- Boutons de navigation -->
+      <button class="carousel-btn carousel-btn-prev" aria-label="Slide précédente">‹</button>
+      <button class="carousel-btn carousel-btn-next" aria-label="Slide suivante">›</button>
     </div>
+
+    <!-- Indicateurs -->
+    <div class="carousel-indicators" id="carouselIndicators"></div>
 
     <div class="eco-text">
       <p>
-        La Fanfare Comtoise s’engage pour l’environnement avec des actions concrètes :
+        La Fanfare Comtoise s'engage pour l'environnement avec des actions concrètes :
         énergie verte, tri sélectif, gobelets réutilisables, mobilité douce et soutien
         aux producteurs locaux.
       </p>
 
       <ul class="eco-list">
-  <li>
-    <img src="assets/icones/bouton feuille.svg" alt="Énergie" class="flèche">
-    <div class="eco-text-content">
-      <h3>Énergie 100% renouvelable</h3>
-      <p>Toutes nos scènes sont alimentées par des sources d'énergie verte.</p>
-    </div>
-  </li>
-  <li>
-    <img src="assets/icones/bouton feuille.svg" alt="Zéro déchet" class="eco-icon">
-    <div class="eco-text-content">
-      <h3>Zéro déchet plastique</h3>
-      <p>Gobelets et contenants réutilisables ou compostables.</p>
-    </div>
-  </li>
-  <li>
-    <img src="assets/icones/bouton feuille.svg" alt="Mobilité" class="eco-icon">
-    <div class="eco-text-content">
-      <h3>Mobilité douce encouragée</h3>
-      <p>Parkings vélo, navettes gratuites et covoiturage.</p>
-    </div>
-  </li>
-</ul>
+        <li>
+          <img src="assets/icones/bouton feuille.svg" alt="Énergie" class="eco-icon">
+          <div class="eco-text-content">
+            <h3>Énergie 100% renouvelable</h3>
+            <p>Toutes nos scènes sont alimentées par des sources d'énergie verte.</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/icones/bouton feuille.svg" alt="Zéro déchet" class="eco-icon">
+          <div class="eco-text-content">
+            <h3>Zéro déchet plastique</h3>
+            <p>Gobelets et contenants réutilisables ou compostables.</p>
+          </div>
+        </li>
+        <li>
+          <img src="assets/icones/bouton feuille.svg" alt="Mobilité" class="eco-icon">
+          <div class="eco-text-content">
+            <h3>Mobilité douce encouragée</h3>
+            <p>Parkings vélo, navettes gratuites et covoiturage.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -197,8 +221,6 @@
     <h2>Nos Partenaires</h2>
   </header>
 </section>
-<script src="src/js/main.js"></script>
-</body>
 
 <!-- FOOTER -->
 <footer id="footer">
@@ -221,10 +243,10 @@
     <nav class="footer-nav">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#festival">Le Festival</a></li>
-        <li><a href="#programme">Programme</a></li>
-        <li><a href="#artistes">Artistes</a></li>
-        <li><a href="#infos-pratiques">Infos Pratiques</a></li>
+        <li><a href="Le_festival.html">Le Festival</a></li>
+        <li><a href="Le_programme.html">Programme</a></li>
+        <li><a href="Les_artistes.html">Artistes</a></li>
+        <li><a href="Infos_pratiques.html">Infos Pratiques</a></li>
       </ul>
     </nav>
 
@@ -233,23 +255,15 @@
       <h4>Contact</h4>
       <ul>
         <li>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
+          <img src="assets/Icones/Localisation.svg" alt="Icône localisation" width="16" height="16">
           Montbéliard 25200
         </li>
         <li>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m2 7 10 6 10-6"></path>
-          </svg>
+          <img src="assets/Icones/lettre.svg" alt="Icône lettre" width="16" height="16">
           contact@lafanfarecomtoise.fr
         </li>
         <li>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
+          <img src="assets/Icones/Telephone.svg" alt="Icône telephone" width="16" height="16">
           03 81 XX XX XX
         </li>
       </ul>
@@ -266,9 +280,7 @@
           <img src="assets/Icones/insta.svg" alt="Instagram">
         </a>
         <a href="#" aria-label="Twitter">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-          </svg>
+            <img src="assets/Icones/twitter.svg" alt="Twitter">
         </a>
       </div>
     </div>
@@ -279,3 +291,8 @@
     </div>
   </div>
 </footer>
+
+<script src="src/js/main.js"></script>
+<script src="src/js/carousel.js"></script>
+</body>
+</html>
