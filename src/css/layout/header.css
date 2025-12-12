@@ -200,39 +200,65 @@ body.menu-open {
   color: #c0392b;
   outline: none;
 }
+/* SEARCH BAR */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
 
-/* Responsive */
-@media (max-width: 768px) {
-  .header {
-    padding: 12px 16px;
-    min-height: 64px;
-  }
-  
-  .header .brand img {
-    height: 44px;
-    margin-left: 8px;
-  }
-  
-  .burger-btn {
-    width: 48px;
-    height: 48px;
-    margin-right: 8px;
-    padding: 6px;
-  }
-  
-  .burger-btn span {
-    width: 22px;
-    height: 3px;
-    margin: 3px 0;
-  }
-  
-  .nav_menu.menu-page ul {
-    gap: 12px;
-  }
+.search-input {
+  width: 100%;
+  padding: 10px 45px 10px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.search-input:focus {
+  border-color: #2c5f2d;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(44, 95, 45, 0.1);
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #2c5f2d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.search-btn:hover {
+  background-color: #1f4420;
+  transform: scale(1.05);
+}
+
+.search-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
   
   /* Hero en dessous du header mobile */
   #hero-festival,
   #hero {
     margin-top: 64px;
   }
-}
