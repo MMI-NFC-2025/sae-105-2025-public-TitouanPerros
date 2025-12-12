@@ -3,11 +3,13 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Perros
+- PRÉNOM : Titouan
+- GROUPE : A2
+- URL du site : https://lafanfarecomtoise.titouan-perros.fr
+- URL netlify : https://candid-mousse-028a49.netlify.app/
+- URL FIGMA : https://www.figma.com/design/WoioG7Bq4SmHHSoBZXpBgT/Sans-titre?node-id=8-4815&t=glnzcNZFtDpmPj5g-1
+
 
 ## Sujet
 
